@@ -1,7 +1,7 @@
 <template>
   
-    <header class="col-sm-6 col-lg-6 col-xl-12 bg-header">
-      <img class="width-logo" alt="spotify" src="https://images-eu.ssl-images-amazon.com/images/I/41xu2Bdb4oL.jpg">
+    <header class="bg-header">
+      <img class="width-logo" alt="spotify" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png">
     </header>
  
 </template>
@@ -20,7 +20,8 @@ export default {
 @import "@/style/general.scss";
 
   .bg-header {
-    background:blue;
+    padding: 6px;
+    background:rgb(8, 8, 66);
   }
 
 </style>

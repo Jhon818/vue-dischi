@@ -1,12 +1,19 @@
 <template>
 <section class="container">
- <ul class="row">
-      <li class="col-3" v-for="(card,index) in cardsList" :key="index">
-<div>{{card.poster}}</div>
-        <p>{{card.title}}</p>
-        <p>{{card.year}}</p>
+    
+<ul class="row">
+      <li class="col-xl-2 col-lg-2 col-sm-5 text-center m-3 p-2" v-for="(card,index) in cardsList" :key="index">
+<img class="w-100" :src="card.poster" alt="">
+
+<div class="d-flex flex-column">
+         <span class="text-light">{{card.title}}</span>
+         <span>{{card.author}}</span>
+         <span>{{card.year}}</span>
+</div>
+       
       </li>
   </ul>
+
 </section>
 </template>
 
@@ -35,6 +42,16 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
+
+
+li {
+    background: rgb(13, 12, 36);
+    list-style: none;
+}
+
+span {
+    color: grey;
+}
 </style>

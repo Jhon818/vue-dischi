@@ -1,5 +1,5 @@
 <template>
-    <main class="bg-main col-sm-6 col-lg-6 col-xl-12">
+    <main class="bg-main d-flex align-items-center">
         <Cards />
     </main>
 </template>
@@ -21,7 +21,6 @@ export default {
 
   .bg-main {
     background: $bg-main-spotify;
-    height: $h-100vh;
   }
 
 </style>
