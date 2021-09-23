@@ -2,16 +2,19 @@
   
     <header class="bg-header">
       <img class="width-logo" alt="spotify" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/768px-Spotify_logo_without_text.svg.png">
+      <Search  @search='getCards'/>
     </header>
  
 </template>
 
 <script>
+import Search from '@/components/Search.vue';
+
 export default {
   name: 'Header',
-  // props: {
-  //   msg: String
-  // }
+  components: {
+      Search,
+  }
 }
 </script>
 

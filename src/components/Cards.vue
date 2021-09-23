@@ -1,6 +1,6 @@
 <template>
 <section class="container">
-    
+   
 <ul class="row">
       <li class="col-xl-2 col-lg-2 col-sm-5 text-center m-3 p-2" v-for="(card,index) in cardsList" :key="index">
 <img class="w-100" :src="card.poster" alt="">
@@ -18,10 +18,13 @@
 </template>
 
 <script>
-
+// import Search from '@/components/Search.vue';
 import axios from 'axios';
 export default {
   name: 'Cards',
+//   components : {
+//       Search,
+//   },
     data() {
         return {  APIurl: "https://flynn.boolean.careers/exercises/api/array/music",
          cardsList: []
@@ -37,7 +40,7 @@ export default {
                     .then( res => {
                         this.cardsList = res.data.response;
                     })
-        }
+        },
     }
 }
 </script>
